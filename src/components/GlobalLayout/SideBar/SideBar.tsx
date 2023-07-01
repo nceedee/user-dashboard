@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import   { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { BrowserRouter, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { menus } from "./MenuLinks/MenuLinks";
 
 export const SideBar = () => {
