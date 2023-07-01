@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BrowserRouter, Link } from "react-router-dom";
-import { menus } from "./SideBar/Hooks/menuList";
+import { menus } from "./SideBar/MenuLinks/MenuLinks";
 
 export const SideBar = () => {
 	const [open, setOpen] = useState(true);
@@ -19,20 +19,20 @@ export const SideBar = () => {
 				/>
 			</div>
 			<BrowserRouter>
-				<div className="mt-4 flex flex-col gap-4 relative">
+				<div className="mt-4  flex flex-col gap-4 relative">
 					{menus.map((menu, i) => (
 						<Link
 							to={menu.link}
 							key={i}
-							className={`${
-								menu.margin && "mt-5"
-							} group flex items-center text-sm space-x-2 font-medium p-1 hover:bg-accent rounded-md capitalize   `}>
+							className={`${menu.margin && "mt-5"} ${
+								open ? "p-2" : "p-1"
+							} group flex items-center text-sm space-x-2 font-medium hover:bg-accent rounded-md capitalize overflow-hidden relative`}>
 							<menu.icon size={20} className={`${!open && "w-full"}`} />
 							<h2
 								style={{ transitionDelay: `${i + 3}00ms` }}
-								className={`whitespace-pre duration-500   ${
-									!open && "w-0 opacity-0 translate-x-28 overflow-hidden"
-								}`}>
+								className={`whitespace-pre duration-300  
+								${!open && " opacity-0 translate-x-28 overflow-hidden absolute left-12"}
+								`}>
 								{menu.name}
 							</h2>
 							<h2
