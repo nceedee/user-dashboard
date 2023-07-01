@@ -1,7 +1,9 @@
+import { Header } from "../../GlobalLayout/Header";
+
 export const Dashboard = () => {
 	return (
-		<section className="">
-			<div className="m-3 text-xl text-gray-900 font-semibold">DASHBOARD</div>
+		<section className="relative right-6 w-full bg-primary">
+			<Header/>
 		</section>
 	);
 };

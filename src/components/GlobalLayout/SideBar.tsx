@@ -11,7 +11,7 @@ export const SideBar = () => {
 			className={` bg-secondary min-h-screen ${
 				open ? "w-72" : "w-16"
 			} duration-500 text-gray-100 px-4 `}>
-			<div className="py-3 flex justify-end">
+			<div className="py-5 flex justify-end">
 				<HiMenuAlt3
 					size={26}
 					className="cursor-pointer"
@@ -19,7 +19,7 @@ export const SideBar = () => {
 				/>
 			</div>
 			<BrowserRouter>
-				<div className="mt-4  flex flex-col gap-4 relative">
+				<div className="mt-4 flex flex-col gap-4 relative">
 					{menus.map((menu, i) => (
 						<Link
 							to={menu.link}

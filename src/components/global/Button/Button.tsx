@@ -10,7 +10,6 @@ export const Button = ({ className, icon, ...props }: ButtonType) => {
             {icon}
             <Button
                 {...props}
-
                 className="p-2 w-full rounded-lg outline-none border-none"
             />
         </div>
