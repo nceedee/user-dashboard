@@ -1,4 +1,4 @@
-import { UserCard } from "../../../global/Card/UsersCard/UsersCard"
+import { UserCard } from "../../../Global/Card/UsersCard/UsersCard"
 import { PiUserGearLight } from 'react-icons/pi';
 
 export const ActiveUsers = () => {

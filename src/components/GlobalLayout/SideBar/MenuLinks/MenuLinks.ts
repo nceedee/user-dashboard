@@ -6,7 +6,7 @@ import { RiSettings4Line } from "react-icons/ri";
 
 export const menus = [
 	{ name: "dasboard", link: "/", icon: MdOutlineDashboard },
-	{ name: "users", link: "/", icon: AiOutlineUserAdd },
+	{ name: "users", link: "users", icon: AiOutlineUserAdd },
 	{ name: "messages", link: "/", icon: FiMessageSquare },
 	{ name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
 	{ name: "file manager", link: "/", icon: FiFolder },

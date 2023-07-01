@@ -7,7 +7,7 @@ type UserCardType = React.ComponentProps<"div"> & { icon?: ReactNode, info?: Rea
 export const UserCard = ({ className, icon ,info,percent,...props }: UserCardType) => {
 
     return (
-        <Card className="sm:w-[100%] lg:w-[26%]">
+        <Card className="sm:w-[100%] lg:w-[25%]">
             <div className="flex justify-between">
                 {info}
                 <div className="bg-[rgba(0,153,153,.4)] rounded-full text-secondary p-2">

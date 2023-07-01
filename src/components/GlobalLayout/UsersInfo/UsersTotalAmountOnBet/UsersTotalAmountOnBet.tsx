@@ -1,5 +1,5 @@
 import { AiTwotoneWallet } from "react-icons/ai"
-import { UserCard } from "../../../global/Card/UsersCard/UsersCard"
+import { UserCard } from "../../../Global/Card/UsersCard/UsersCard"
 
 export const UsersTotalAmountOnBet = () => {
     return (
