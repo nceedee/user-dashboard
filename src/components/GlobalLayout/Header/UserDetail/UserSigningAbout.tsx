@@ -1,5 +1,5 @@
 import { FiBell } from "react-icons/fi"
-import { Profile } from "../../../global/Profile/Profile"
+import { Profile } from "../../../Global/Profile/Profile"
 
 export const UserSigningAbout = () => {
     return (

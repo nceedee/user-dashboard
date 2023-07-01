@@ -1,9 +1,9 @@
-import { Header } from "../../GlobalLayout/Header";
+import { MaxCard } from "../../Global/Card/MaxCard";
 
 export const Dashboard = () => {
 	return (
-		<section className="relative right-6 w-full bg-primary">
-			<Header/>
-		</section>
+		<MaxCard className="bg-primary text-xl text-gray-900 font-semibold ">
+			DASHBOARD
+		</MaxCard>
 	);
 };
